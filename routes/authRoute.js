@@ -13,7 +13,7 @@ authRoute.post("/register", registerValidation, async (req, res) => {
     const newUser = await UserModel.create(req.body);
     newUser.save();
 
-    const activationMailHtml = htmlActivation(`http://localhost:3000/activation-account/${newUser?._id}`)
+    const activationMailHtml = htmlActivation(`https://my-shop-frontend-dun.vercel.app/activation-account/${newUser?._id}`)
     sendMail(
       "vojvoda19881@gmail.com",
       req.body.email,
