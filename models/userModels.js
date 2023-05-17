@@ -4,7 +4,6 @@ const userSChema = new Mongoose.Schema({
   email: { type: String },
   username: { type: String },
   password: { type: String },
-  // confirmPassword: { type: String },
   firstName: { type: String },
   lastName: { type: String },
   phone: { type: String },

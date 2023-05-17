@@ -4,7 +4,6 @@ const mailRoute = express.Router();
 
 mailRoute.post("/send-contact", (req, res) => {
     const body = req.body;
-    console.log(body)
     sendMail(
         body.email,
         "vojvoda1988@gmail.com",

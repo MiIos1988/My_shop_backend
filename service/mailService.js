@@ -16,7 +16,6 @@ const sendMail = function (from, to, subject, html) {
         subject: subject, // Subject line
         html: html, // html body
     }
-    console.log(mailOptions)
     return transporter.sendMail(mailOptions)
 }
 

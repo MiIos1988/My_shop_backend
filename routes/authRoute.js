@@ -47,7 +47,6 @@ authRoute.post("/login", (req, res) => {
         data.password = undefined;
         data.isActive = undefined;
         let token = jwt.sign({ ...data, ts }, "log");
-        // data.isAdmin = undefined;
         res.send({ token });
       }
     })
